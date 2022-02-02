@@ -1,0 +1,109 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+<servlet>
+  	<servlet-name>Home</servlet-name>
+  	<display-name>Home</display-name>
+  	<description></description>
+  	<servlet-class>com.athenahealth.demo.Homepage</servlet-class>
+  </servlet>
+<servlet>
+	<servlet-name>Record</servlet-name>
+	<display-name>Record</display-name>
+	<description>Prints the record</description>
+	<servlet-class>com.athenahealth.demo.Record</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>FindName</servlet-name>
+	<display-name>FindName</display-name>
+	<description></description>
+	<servlet-class>com.athenahealth.demo.FindName</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>InputName</servlet-name>
+	<display-name>InputName</display-name>
+	<description></description>
+	<servlet-class>com.athenahealth.demo.InputName</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>InputReg</servlet-name>
+	<display-name>InputReg</display-name>
+	<description></description>
+	<servlet-class>com.athenahealth.demo.InputReg</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>FindReg</servlet-name>
+	<display-name>FindReg</display-name>
+	<description></description>
+	<servlet-class>com.athenahealth.demo.FindReg</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>CheckMarks</servlet-name>
+	<display-name>CheckMarks</display-name>
+	<description></description>
+	<servlet-class>com.athenahealth.demo.CheckMarks</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>Sort</servlet-name>
+	<display-name>Sort</display-name>
+	<description></description>
+	<servlet-class>com.athenahealth.demo.Sort</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>AddStudent</servlet-name>
+	<display-name>AddStudent</display-name>
+	<description></description>
+	<servlet-class>com.athenahealth.demo.AddStudent</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>NewRecord</servlet-name>
+	<display-name>NewRecord</display-name>
+	<description></description>
+	<servlet-class>com.athenahealth.demo.NewRecord</servlet-class>
+</servlet>
+
+ 
+  <servlet-mapping>
+  	<servlet-name>Home</servlet-name>
+  	<url-pattern>/Home</url-pattern>
+  	</servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Record</servlet-name>
+  	<url-pattern>/Record</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FindName</servlet-name>
+  	<url-pattern>/FindName</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>InputName</servlet-name>
+  	<url-pattern>/InputName</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>InputReg</servlet-name>
+  	<url-pattern>/InputReg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FindReg</servlet-name>
+  	<url-pattern>/FindReg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CheckMarks</servlet-name>
+  	<url-pattern>/CheckMarks</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Sort</servlet-name>
+  	<url-pattern>/Sort</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddStudent</servlet-name>
+  	<url-pattern>/AddStudent</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>NewRecord</servlet-name>
+  	<url-pattern>/NewRecord</url-pattern>
+  </servlet-mapping>
+</web-app>
