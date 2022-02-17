@@ -14,25 +14,47 @@ public class App
     {	
     	logs.info("Starting");
     	Scanner s = new Scanner(System.in);
-    	//LinkedList <String> a = new LinkedList<String>();
         Methodsofapp a=new Methodsofapp();
         a.load();
-        //a.record();	
-        //System.out.println("Enter a String");
-        //String ab=s.nextLine();
-        //a.nameRecord(ab);
-        //System.out.println("Enter reg number");
-        
-       // String b=s.nextLine();
-        //a.regRecord(b);
-        //a.checkMarks();
-        //workbook.close();
-        //String [] s1 =new String[3];
-        //s1[0]=s.nextLine();
-        //s1[1]=s.nextLine();
-        //s1[2]=s.nextLine();
-        //a.addStudent(s1);
-        a.sort("2");
+        String menu= "Welcome!\nEnter an option:\n"
+        		+ "1. Print the Record\n"
+        		+ "2. Find Name in Record\n"
+        		+ "3. Find Registration Number in Record\n"
+        		+ "4. Results for Student\n"
+        		+ "5. Sort\n"
+        		+ "6. Add Student";
+        System.out.println(menu);
+        int n=s.nextInt();
+        switch (n) {
+        	case 1: a.record();
+        		break;
+        	case 2:System.out.println("Enter a String : ");
+        	s.nextLine();
+            	String ab=s.nextLine();
+            	a.nameRecord(ab);
+            	break;
+        	case 3:System.out.println("Enter reg number : ");
+            	String b=s.next();
+            	a.regRecord(b);
+            	break;
+        	case 4:a.checkMarks();
+        		break;
+        	case 5:System.out.println("Enter 1 for RegNo, 2 for Name, 3 for Marks\n");
+        		int ch=s.nextInt();
+        		a.sort(ch);
+        		break;
+        	case 6:String [] s1 =new String[3];
+        		System.out.println("Enter RegNo, Name and Marks in Order/n");
+        		s.nextLine();
+        		s1[0]=s.nextLine();
+		    	s1[1]=s.nextLine();
+		    	s1[2]=s.nextLine();
+		    	a.addStudent(s1);
+		    	System.out.println("Record Sucessfully Added/n");
+		    	break;
+        	default:System.out.println("Wrong Choice entered");
+        		break;
+        }
         s.close();
         logs.info("End");
     }

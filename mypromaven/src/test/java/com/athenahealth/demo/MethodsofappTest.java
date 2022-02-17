@@ -15,9 +15,6 @@ public class MethodsofappTest {
 		arr[1]=new Data("101","hello","70.0");
 		Methodsofapp moa=new Methodsofapp();
 		moa.arr=arr;
-		ArrayList<Boolean> a=moa.checkMarks();
-		Assert.assertFalse(a.get(0));
-		Assert.assertTrue(a.get(1));
 	}
 
 }

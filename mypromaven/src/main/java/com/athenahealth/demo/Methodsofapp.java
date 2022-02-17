@@ -97,20 +97,19 @@ public class Methodsofapp {
 	        }
 		}
 
-		public ArrayList<Boolean> checkMarks() {
-			ArrayList<Boolean> pf = new ArrayList<Boolean>();
-			//format();
+		public void checkMarks() {
+			format();
+			
 			for(int i=0;i<arr.length;i++) {
 	        	arr[i].display();
 	        	if(arr[i].marks>=40.0) {
-	        		pf.add(true);
+	        		System.out.print("Pass");
 	        	}
 	        	else {
-	        		pf.add(false);
+	        		System.out.print("Fail");
 	        	}
 	        	System.out.println();
 	        }
-			return pf;
 		}
 		public void format() {
 			DataFormatter dataFormatter = new DataFormatter();
@@ -126,10 +125,10 @@ public class Methodsofapp {
 	        System.out.println();
 	        }
 		}
-		public void sort(String option) {
+		public void sort(int option) {
 			
 			List<Data> list = new ArrayList<>(Arrays.asList(arr));
-			int op = Integer.parseInt(option);
+			int op = option;
 			switch(op) {
 			case 1:Collections.sort(list, new Sbr());
 					break;

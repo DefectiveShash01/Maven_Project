@@ -19,13 +19,7 @@
 		<slf4j.version>1.6.6</slf4j.version>
         <logback.version>1.0.7</logback.version>
   </properties>
-	<repositories>
-   <repository>
-       <id>AsposeJavaAPI</id>
-       <name>Aspose Java API</name>
-       <url>http://repository.aspose.com/repo/</url>
-   </repository>
-</repositories>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -66,17 +60,7 @@
     	<artifactId>commons-io</artifactId>
     	<version>2.11.0</version>
 	</dependency>
-	<dependency>
-    	<groupId>com.aspose</groupId>
-    	<artifactId>aspose-cells</artifactId>
-   		<version>21.12</version>
-	</dependency>
-		<!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
-	<dependency>
-    	<groupId>org.scala-lang</groupId>
-    	<artifactId>scala-library</artifactId>
-    	<version>2.13.8</version>
-	</dependency>
+
 
   </dependencies>
 
